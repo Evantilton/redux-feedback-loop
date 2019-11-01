@@ -1,13 +1,18 @@
 # Redux Feedback Loop
 
 
->Do not clone this repository. Instead, download the zip, extract the contents, create a new GitHub repository and `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
+{X}>Do not clone this repository. Instead, download the zip, extract the contents, create a new GitHub repository and `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
 
 **PLEASE COMMENT YOUR CODE.**
 
 "And my last reminder of the day, which is my last reminder of every day, is...?" - Luke
 
  For this assignment, you will be creating a feedback form modeled after Prime's system. Feedback will be collected over 4 views. In a separate review page, display the current feedback values and a submit button. and when all steps are complete, your app will save the feedback in the database. 
+
+ View 1:
+ View 2:
+ View 3:
+ View 4:
 
 ### SETUP
 
@@ -32,12 +37,16 @@ Create a multi-part form that allows users to leave feedback for today.
 There will be 4 views for the form parts.
 
 The parts:
-- How are you feeling today?
+{} View 1-
+ How are you feeling today?
 ![feeling](wireframes/feeling.png)
-- How well are you understanding the content?
+ {} View 2-
+  How well are you understanding the content?
 ![understanding](wireframes/understanding.png)
+{} View 3
 - How well are you being supported?
 ![support](wireframes/supported.png)
+View 4
 - Any comments you want to leave?
 ![comments](wireframes/comments.png)
 
