@@ -26,6 +26,13 @@ const setUnderstanding = (state = [], action) => {
     }
     return state;
   }
+
+  const setComments = (state = [], action) => {
+    if (action.type==='SET_COMMENTS'){
+      return  [action.payload];
+    }
+    return state;
+  }
 //   const setAddress = (state = {}, action) => {
 //     if (action.type==='SET_ADDRESS'){
 //       return  action.payload;
@@ -40,6 +47,7 @@ const reduxStore = createStore(
       setFeeling,
       setUnderstanding,
       setSupport,
+      setComments,
     }),
     applyMiddleware(logger)
   );

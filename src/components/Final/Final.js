@@ -7,10 +7,20 @@ import {connect} from 'react-redux';
 
 
 class Final extends Component {
+
+  submitInput = (event) => {
+    event.preventDefault();
+      
+    this.goNext();
+  }
+  
+  goNext =() => this.props.history.push('/')
+    
   render() {
     return (
       <div>
-
+        <h1> THANK YOU </h1>
+        <button onClick={this.submitInput}>Leave Another Feedback</button>
       </div>
          
     );

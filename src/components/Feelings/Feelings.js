@@ -25,8 +25,11 @@ changeType = (event) => {
     } else {
     console.log(this.state.feeling)
     this.props.dispatch({type: 'SET_FEELING', payload: this.state.feeling})
+    this.goNext();
   }
 }
+goNext =() => this.props.history.push('/understanding')
+
   render() {
     return (
       
@@ -44,6 +47,7 @@ changeType = (event) => {
       
       <footer>
       <button onClick={this.submitInput}>Next</button>
+      
       </footer>
       </div>
     );

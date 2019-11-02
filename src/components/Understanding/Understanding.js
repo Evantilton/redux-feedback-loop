@@ -26,7 +26,11 @@ changeType = (event) => {
     console.log(this.state.understanding)
     this.props.dispatch({type: 'SET_UNDERSTANDING', payload: this.state.understanding})
   }
+  this.goNext();
 }
+
+goNext =() => this.props.history.push('/support')
+
   render() {
     return (
       

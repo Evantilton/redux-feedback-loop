@@ -35,13 +35,13 @@ class App extends Component {
               <Link to="/support">Support 3 of 7</Link>
             </li>
             <li>
-              <Link to="/feedback">Feedback 4 of 7</Link>
+              <Link to="/comments">comments 4 of 7</Link>
             </li>
             <li>
               <Link to="/review">Review 5 of 7</Link>
             </li>
             <li>
-              <Link to="/final">Review 6 of 7</Link>
+              <Link to="/final">Final 6 of 7</Link>
             </li>
             <li>
               <Link to="/admin">Admin 7 of 7</Link>
