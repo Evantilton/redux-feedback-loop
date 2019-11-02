@@ -15,14 +15,18 @@ state = {
 changeType = (event) => {
   console.log("in ChangeType")
     this.setState({
-        feeling: event.target.value,
+        understanding: event.target.value,
     })
   }
   submitInput = (event) => {
     event.preventDefault();
+    if (this.state.understanding === ''){
+      alert("PLEASE PICK A NUMBER")
+    } else {
     console.log(this.state.understanding)
     this.props.dispatch({type: 'SET_UNDERSTANDING', payload: this.state.understanding})
   }
+}
   render() {
     return (
       

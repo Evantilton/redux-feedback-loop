@@ -39,6 +39,7 @@ const reduxStore = createStore(
     combineReducers({
       setFeeling,
       setUnderstanding,
+      setSupport,
     }),
     applyMiddleware(logger)
   );

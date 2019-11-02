@@ -20,9 +20,13 @@ changeType = (event) => {
   }
   submitInput = (event) => {
     event.preventDefault();
+    if (this.state.support === ''){
+      alert("PLEASE PICK A NUMBER")
+    } else {
     console.log(this.state.support)
     this.props.dispatch({type: 'SET_SUPPORT', payload: this.state.support})
   }
+}
   render() {
     return (
       

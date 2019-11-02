@@ -9,7 +9,7 @@ import {connect} from 'react-redux';
 class Feelings extends Component {
 
 state = {
-  type: '',
+  feeling: '',
 }
 
 changeType = (event) => {
@@ -20,9 +20,13 @@ changeType = (event) => {
   }
   submitInput = (event) => {
     event.preventDefault();
-    console.log(this.state.type)
+    if (this.state.feeling === ''){
+      alert("PLEASE PICK A NUMBER")
+    } else {
+    console.log(this.state.feeling)
     this.props.dispatch({type: 'SET_FEELING', payload: this.state.feeling})
   }
+}
   render() {
     return (
       
