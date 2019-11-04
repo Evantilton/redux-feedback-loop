@@ -18,6 +18,8 @@ changeType = (event) => {
         feeling: event.target.value,
     })
   }
+
+  
   submitInput = (event) => {
     event.preventDefault();
     if (this.state.feeling === ''){

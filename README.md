@@ -1,9 +1,28 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
-
+## REDUX-FEEDBACK-LOOP
 ## Description
+## Duration: Weekend
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This application is for a user submit comments.  It allows the user to rate various questions on a scale from 1-5 and allows them to submit comments.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/github-finalization-assignment).
+To see the fully functional site, please visit: https://github.com/Evantilton/redux-feedback-loop
+Screen Shot
+
+
+## Installation
+fork and clone the repo
+npm install
+create the database
+npm run server
+npm run client
+## Usage
+Follow the steps on each page to submit your comments!
+## Built With
+react
+react-redux
+html
+jsx
+css
+## License
+MIT
+## Support
+If you have suggestions or issues, please email me at Evantilton@gmail.com
