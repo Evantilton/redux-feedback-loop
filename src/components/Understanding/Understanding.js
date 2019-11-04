@@ -25,12 +25,12 @@ changeType = (event) => {
     } else {
     console.log(this.state.understanding)
     this.props.dispatch({type: 'SET_UNDERSTANDING', payload: this.state.understanding})
+    this.goNext();
   }
-  this.goNext();
 }
 
 goNext =() => this.props.history.push('/support')
-
+goBack =() => this.props.history.push('/')
   render() {
     return (
       
@@ -47,7 +47,10 @@ goNext =() => this.props.history.push('/support')
         
       
       <footer>
+      <button onClick={this.goBack}>Back</button>
       <button onClick={this.submitInput}>Next</button>
+      
+      
       </footer>
       </div>
     );

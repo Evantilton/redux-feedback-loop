@@ -29,28 +29,28 @@ class App extends Component {
               <Link to="/">Feelings 1 of 7</Link>
             </li>
             <li>
-              <Link to="/understanding">Understanding 2 of 7</Link>
+              <Link to="/Understanding">Understanding 2 of 7</Link>
             </li>
             <li>
-              <Link to="/support">Support 3 of 7</Link>
+              <Link to="/Support">Support 3 of 7</Link>
             </li>
             <li>
-              <Link to="/comments">comments 4 of 7</Link>
+              <Link to="/Comments">Comments 4 of 7</Link>
             </li>
             <li>
-              <Link to="/review">Review 5 of 7</Link>
+              <Link to="/Review">Review 5 of 7</Link>
             </li>
             <li>
-              <Link to="/final">Final 6 of 7</Link>
+              <Link to="/Final">Final 6 of 7</Link>
             </li>
             <li>
-              <Link to="/admin">Admin 7 of 7</Link>
+              <Link to="/Admin">Admin 7 of 7</Link>
             </li>
           </ul>
           <Route exact path="/" component={Feelings}/>
-          <Route exact path="/understanding" component={Understanding}/>
-          <Route exact path="/support" component={Support}/>
-          <Route exact path="/comments" component={Comments}/>
+          <Route exact path="/Understanding" component={Understanding}/>
+          <Route exact path="/Support" component={Support}/>
+          <Route exact path="/Comments" component={Comments}/>
           <Route exact path="/Review" component={Review}/>
           <Route exact path="/Final" component={Final}/>
           <Route exact path="/Admin" component={Admin}/>

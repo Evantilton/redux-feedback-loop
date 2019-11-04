@@ -26,7 +26,7 @@ class Feedback extends Component {
     }
     
   goNext =() => this.props.history.push('/review')
-
+  goBack =() => this.props.history.push('/support')
   render() {
     return (
 
@@ -37,6 +37,8 @@ class Feedback extends Component {
 
 
         <footer>
+        <button onClick={this.goBack}>Back</button>
+        
           <button onClick={this.submitInput}>Next</button>
         </footer>
       </div>

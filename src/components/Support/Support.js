@@ -25,12 +25,13 @@ class Support extends Component {
     } else {
       console.log(this.state.support)
       this.props.dispatch({ type: 'SET_SUPPORT', payload: this.state.support })
+      this.goNext();
     }
-    this.goNext();
+    
   }
   
   goNext =() => this.props.history.push('/comments')
-
+  goBack =() => this.props.history.push('/understanding')
   render() {
     return (
 
@@ -47,6 +48,8 @@ class Support extends Component {
 
 
         <footer>
+        <button onClick={this.goBack}>Back</button>
+        
           <button onClick={this.submitInput}>Next</button>
         </footer>
       </div>
