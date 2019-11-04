@@ -16,4 +16,21 @@
 .App-intro {
   font-size: large;
 }
+button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 10 10.3em 10.3em 10;
+  border-radius:1.12em;
+  box-sizing: border-box;
 
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:black;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+
+ 
