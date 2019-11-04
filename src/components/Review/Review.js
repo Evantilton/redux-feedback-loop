@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import Swal from 'sweetalert2'
 import { connect } from 'react-redux';
 
 
@@ -21,6 +21,11 @@ class Review extends Component {
   submitInput = (event) => {
     console.log(this.state)
     this.handleSubmit(event);
+    Swal.fire(
+      'Good job!',
+      'Luke is proud of you!',
+      'success'
+    )
     this.goNext();
   }
 
@@ -48,7 +53,7 @@ class Review extends Component {
         <h1>Comments: {this.props.setComments}</h1>
         <footer>
           <button onClick={this.goBack}>Back</button>
-          <button onClick={this.submitInput}>Next</button>
+          <button onClick={this.submitInput}>Submit</button>
         </footer>
       </div>
 

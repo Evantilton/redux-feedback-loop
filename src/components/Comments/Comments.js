@@ -12,6 +12,8 @@ class Feedback extends Component {
     comments: '',
   }
 
+  
+
   changeType = (event) => {
     console.log("in ChangeType")
     this.setState({

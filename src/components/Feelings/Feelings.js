@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import axios from 'axios';
-
+import Swal from 'sweetalert2'
 import {connect} from 'react-redux';
 
 
@@ -21,7 +21,13 @@ changeType = (event) => {
   submitInput = (event) => {
     event.preventDefault();
     if (this.state.feeling === ''){
-      alert("PLEASE PICK A NUMBER")
+      Swal.fire({
+        title: 'Oops!',
+        text: 'You must choose a number',
+        type: 'error',
+        confirmButtonText: 'Cool'
+      })
+      
     } else {
     console.log(this.state.feeling)
     this.props.dispatch({type: 'SET_FEELING', payload: this.state.feeling})
