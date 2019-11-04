@@ -1,26 +1,52 @@
 import React, { Component } from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 
 
 
 class Review extends Component {
 
+  state = {
+    feeling: this.props.setFeeling[0],
+      understanding: this.props.setUnderstanding[0],
+      support: this.props.setSupport[0],
+      comments: this.props.setComments[0]
+  }
+
+ 
+ 
+ 
   submitInput = (event) => {
-    event.preventDefault();
-      
+    console.log(this.state)
+    this.handleSubmit(event);
     this.goNext();
   }
-  
-  goNext =() => this.props.history.push('/final')
+
+
+
+
+  handleSubmit = ((event) => {
+    axios.post('/submit', this.state)
+      .then(response => {
+        console.log(response)
+      })
+  })
+  goNext = () => this.props.history.push('/final')
+
+
     
   
+  
+
+
+
+
   render() {
     return (
       <div>
-        
+
         <h3>REVIEW YOUR FEEDBACK</h3>
         <h1>Feeling: {this.props.setFeeling} </h1>
         <h1>Understanding: {this.props.setUnderstanding}</h1>
@@ -30,12 +56,12 @@ class Review extends Component {
           <button onClick={this.submitInput}>Next</button>
         </footer>
       </div>
-         
+
     );
   }
 }
 
-const mapReduxStateToProps=(reduxState)=>{
+const mapReduxStateToProps = (reduxState) => {
   return reduxState;
 }
 

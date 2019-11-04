@@ -25,7 +25,7 @@ class Feedback extends Component {
       this.goNext();
     }
     
-    goNext =() => this.props.history.push('/review')
+  goNext =() => this.props.history.push('/review')
 
   render() {
     return (
