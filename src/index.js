@@ -33,12 +33,13 @@ const setUnderstanding = (state = [], action) => {
     }
     return state;
   }
-//   const setAddress = (state = {}, action) => {
-//     if (action.type==='SET_ADDRESS'){
-//       return  action.payload;
-//     }
-//     return state;
-//   }
+  const submittedData = (state = [], action) => {
+    if (action.type==='SUBMITTED_DATA'){
+      return  [action.payload];
+    }
+    return state;
+  }
+
 
   
   
@@ -48,6 +49,7 @@ const reduxStore = createStore(
       setUnderstanding,
       setSupport,
       setComments,
+      submittedData,
     }),
     applyMiddleware(logger)
   );
