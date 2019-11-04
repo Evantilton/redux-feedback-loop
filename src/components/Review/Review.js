@@ -15,9 +15,6 @@ class Review extends Component {
     comments: this.props.setComments[0]
   }
 
-
-
-
   submitInput = (event) => {
     console.log(this.state)
     this.handleSubmit(event);

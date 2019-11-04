@@ -35,7 +35,7 @@ const setUnderstanding = (state = [], action) => {
   }
   const submittedData = (state = [], action) => {
     if (action.type==='SUBMITTED_DATA'){
-      return  [action.payload];
+      state = [...state, action.payload];
     }
     return state;
   }

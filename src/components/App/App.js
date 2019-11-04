@@ -26,29 +26,7 @@ class App extends Component {
           <h4><i>Don't forget it!</i></h4>
         </header>
         <br/>
-          <ul>
-            <li>
-              <Link to="/">Feelings 1 of 7</Link>
-            </li>
-            <li>
-              <Link to="/Understanding">Understanding 2 of 7</Link>
-            </li>
-            <li>
-              <Link to="/Support">Support 3 of 7</Link>
-            </li>
-            <li>
-              <Link to="/Comments">Comments 4 of 7</Link>
-            </li>
-            <li>
-              <Link to="/Review">Review 5 of 7</Link>
-            </li>
-            <li>
-              <Link to="/Final">Final 6 of 7</Link>
-            </li>
-            <li>
-              <Link to="/Admin">Admin 7 of 7</Link>
-            </li>
-          </ul>
+          
           <Route exact path="/" component={Feelings}/>
           <Route exact path="/Understanding" component={Understanding}/>
           <Route exact path="/Support" component={Support}/>
