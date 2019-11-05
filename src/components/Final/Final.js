@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 
 import {connect} from 'react-redux';
 
-
-
-
 class Final extends Component {
 
   submitInput = (event) => {

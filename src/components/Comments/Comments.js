@@ -3,16 +3,11 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 
-
-
-
 class Feedback extends Component {
 
   state = {
     comments: '',
   }
-
-  
 
   changeType = (event) => {
     console.log("in ChangeType")

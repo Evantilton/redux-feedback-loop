@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import Swal from 'sweetalert2'
 import {connect} from 'react-redux';
 
-
-
-
 class Understanding extends Component {
 
 state = {

@@ -3,9 +3,6 @@ import axios from 'axios';
 import Swal from 'sweetalert2'
 import { connect } from 'react-redux';
 
-
-
-
 class Review extends Component {
 
   state = {
@@ -25,9 +22,6 @@ class Review extends Component {
     )
     this.goNext();
   }
-
-
-
 
   handleSubmit = ((event) => {
     axios.post('/submit', this.state)
