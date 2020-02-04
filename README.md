@@ -4,8 +4,6 @@
 
 This application is for a user to submit comments.  It allows the user to rate various questions on a scale from 1-5, write a comment, and then submit them all.
 
-To see the fully functional site, please visit: https://github.com/Evantilton/redux-feedback-loop
-
 ## Installation
 
 fork and clone the repo
