@@ -7,21 +7,23 @@ This application is for a user to submit comments.  It allows the user to rate v
 To see the fully functional site, please visit: https://github.com/Evantilton/redux-feedback-loop
 
 ## Installation
+
 fork and clone the repo
+
 npm install
+
 create the database
+
 npm run server
+
 npm run client
 
 ## Usage
 Follow the steps on each page to submit your comments!
 
 ## Built With
-react
-react-redux
-html
-jsx
-css
+
+react, react-redux, html, jsx, css
 
 ## License
 MIT
