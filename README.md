@@ -2,7 +2,7 @@
 ## Description
 ### Duration: Weekend
 
-This application is for a user to submit comments.  It allows the user to rate various questions on a scale from 1-5, write a comment, and then submit them all.
+This application is for a user to submit comments.  It allows the user to rate various questions on a scale from 1-5, write a comment, and then submit it.
 
 ## Installation
 
