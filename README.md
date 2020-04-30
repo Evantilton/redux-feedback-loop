@@ -6,15 +6,15 @@ This application is for a user to submit comments.  It allows the user to rate v
 
 ## Installation
 
-fork and clone the repo
+1. fork and clone the repo
 
-npm install
+2. npm install
 
-create the database
+3. create the database
 
-npm run server
+4. npm run server
 
-npm run client
+5. npm run client
 
 ## Usage
 Follow the steps on each page to submit your comments!
