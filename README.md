@@ -21,7 +21,7 @@ Follow the steps on each page to submit your comments!
 
 ## Built With
 
-react, react-redux, html, jsx, css
+react, react-redux, html, javascript, css
 
 ## License
 MIT
